@@ -1,0 +1,29 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main(){
+    vector<int>arr ={1,2,2,2,4,5,4,4,3,3,3,4,5,6,6,6,7} ;
+    map<int,int>mapp;
+    vector<int>dupp;
+    
+    for (int i = 0; i < arr.size(); i++) {
+       
+            mapp[arr[i]]++;
+       
+      
+    }
+    for (auto it : mapp) {
+        if (it.second > 1) {  
+            dupp.push_back(it.first);
+        }
+    }
+    cout<<"duplicate element :  ";
+    for(auto it: dupp){
+        cout<<it<<" ";
+    }
+   
+    
+}

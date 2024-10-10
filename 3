@@ -1,0 +1,53 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main(){
+    vector<string>arr ={"red","blue","red","blue","green","red","blue","blue","green","red"} ;
+   
+    vector<string>redd;
+    vector<string>bluee;
+    vector<string>greenn;
+    vector<string>sortt;
+    
+    
+    
+    for (int i = 0; i < arr.size(); i++) {
+       
+           if(arr[i]=="red"){
+               redd.push_back(arr[i]);
+           }
+           if(arr[i]=="blue"){
+               bluee.push_back(arr[i]);
+           }
+           if(arr[i]=="green"){
+               greenn.push_back(arr[i]);
+           }
+       
+      
+    }
+    
+     for (int i = 0; i < redd.size(); i++) {
+               sortt.push_back(redd[i]);
+           }
+           
+     for (int i = 0; i < bluee.size(); i++) {
+               sortt.push_back(bluee[i]);
+           }
+     for (int i = 0; i < greenn.size(); i++) {
+               sortt.push_back(greenn[i]);
+           }
+           
+           
+           
+        for(auto it :sortt){
+            cout<<it<<" ";
+        }   
+           
+           
+}
